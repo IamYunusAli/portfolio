@@ -1,0 +1,3 @@
+# ignoring test.md file
+*.md
+node_modules/
