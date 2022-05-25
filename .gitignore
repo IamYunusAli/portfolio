@@ -1,3 +1,2 @@
-# ignoring test.md file
-*.md
+# ignoring node_modules file
 node_modules/
