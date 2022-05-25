@@ -1,0 +1,99 @@
+body {
+  font-family: "poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  height: 100vh;
+  background-image: url(assets/header-shapesmobile.png);
+  background-size: contain;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 0 15px;
+}
+
+section {
+  margin: 24px;
+}
+
+nav {
+  margin: 0 24px 0 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+span {
+  color: #7f8cff;
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+article {
+  color: #344563;
+  font-weight: 400px;
+  font-size: 16 px;
+  line-height: 24px;
+}
+
+nav > i {
+  color: #6070ff;
+  font-size: 30px;
+}
+
+a > h4 {
+  color: #6070ff;
+  font-size: 20px;
+  line-height: 38px;
+  margin: 0;
+}
+
+section > h4 {
+  margin: 10px 0 5px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0 20px 10px 0;
+  font-size: 15px;
+}
+
+ul > li {
+  margin-right: 0 20px 0 0;
+  color: #505f79;
+  font-size: 10px;
+}
+
+a > i {
+  font-size: 20px;
+}
+
+li:hover {
+  color: #7f8cff;
+}
+
+li:active {
+  color: #2230d2;
+}

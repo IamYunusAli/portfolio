@@ -8,6 +8,11 @@
 - CSS
 - VSCODE for now
 
+## Demo
+
+[Demo]
+<img src="assets/Demohome.png" width="300">
+
 ## Getting Started
 
 **Getting stared with learning full stack web developments.**
@@ -43,3 +48,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse team and the mentors
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
