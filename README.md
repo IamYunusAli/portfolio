@@ -11,7 +11,7 @@
 ## Demo
 
 [Demo]
-<img src="assets/Demohome.png" width="300">
+<img src="assets/demoworkabout.png" width="300">
 
 ## Getting Started
 
