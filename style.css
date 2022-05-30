@@ -165,6 +165,17 @@ div > article {
   height: 20px;
 }
 
+.html {
+  float: inline-start;
+}
+
+.css {
+  float: none;
+}
+
+.javascript {
+  float: inline-end;
+}
 .experience {
   display: flex;
   flex-direction: row;
