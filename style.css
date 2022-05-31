@@ -302,3 +302,82 @@ div > article {
 .skills {
   border-bottom: 1px solid #dfe1e6;
 }
+
+/* contacts section  */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 80px;
+  background-color: #6070ff;
+  width: 100%;
+  margin-top: 113px;
+  background-image: url(assets/contacts.png);
+  background-size: 100% 100%;
+}
+
+.forms {
+  padding: 103px 24px 45px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactme-head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.contactme-body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  text-align: center;
+  display: flex;
+  margin: 10px 0 50px;
+}
+
+.form-name,
+.form-email {
+  width: 327px;
+  border-radius: 8px;
+  height: 48px;
+  margin: 10px 0;
+  border: 1px solid#cfd8dc;
+}
+
+.form-message {
+  width: 327px;
+  height: 170px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.submission :disabled {
+  color: #5e6c84;
+  border-color: #c1c7d0;
+}
+
+.submission :hover:enabled {
+  background: #6070ff;
+  color: white;
+  box-shadow: calc(0px + 0px) 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.submission :active:enabled {
+  background: #2230d2;
+  color: white;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "poppins", sans-serif;
+  font-size: 15px;
+  padding: 10px;
+}
