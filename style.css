@@ -234,6 +234,11 @@ div > article {
   width: 100%;
 }
 
+.aboutme-contact {
+  background-color: white;
+  border-top-right-radius: 80px;
+}
+
 .aboutme-article > h1 {
   font-size: 40px;
   font-weight: 700px;
@@ -357,6 +362,23 @@ div > article {
   height: 170px;
   border-radius: 8px;
   margin: 10px 0;
+}
+
+.submission {
+  font-family: inherit;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  background-color: white;
+  border-radius: 8px;
+  width: 140px;
+  height: 48px;
+  color: #396df2;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 .submission :disabled {
