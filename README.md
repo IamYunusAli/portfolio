@@ -10,8 +10,7 @@
 
 ## Demo
 
-[Demo]
-<img src="assets/demoworkabout.png" width="300">
+[Demo](https://github.com/IamYunusAli/portfolio/blob/desktop-version/assets/demo.mp4)
 
 ## Getting Started
 

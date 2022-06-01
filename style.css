@@ -1,9 +1,20 @@
 body {
   font-family: "poppins", sans-serif;
-  width: 370px;
   background: #f7f7f9;
   padding: 0;
   margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+  padding: 0 10%;
+}
+
+.items {
+  display: none;
 }
 
 a {
@@ -17,7 +28,7 @@ a {
 }
 
 .headline {
-  height: 100vh;
+  height: 718px;
   background-image: url(assets/header-shapesmobile.png);
   background-size: contain;
   padding: 0;
@@ -70,7 +81,6 @@ article {
   font-size: 16 px;
   line-height: 24px;
   margin: 24px 24px 1px 24px;
-  height: vh;
   display: flex;
   flex-direction: column;
 }
@@ -135,13 +145,24 @@ li:active {
   flex-direction: column;
 }
 
+.DProject-Title {
+  display: none;
+}
+
+.Dprojetc-image {
+  display: none;
+}
+
 .container {
   margin: 24px;
   padding: 16px;
   border: 1px solid rgb(219, 215, 215);
   border-radius: 1rem;
-  width: 300px;
   background-color: white;
+}
+
+.container > img {
+  width: 100%;
 }
 
 div > h1 {
@@ -150,6 +171,11 @@ div > h1 {
 
 div > p {
   margin: 18px 0 18px 0;
+}
+
+.project-image {
+  height: 50%;
+  width: 100%;
 }
 
 div > article {
@@ -231,7 +257,7 @@ div > article {
   flex-direction: column;
   border-top-right-radius: 80px;
   background-color: white;
-  width: 100%;
+  align-items: center;
 }
 
 .aboutme-contact {
@@ -244,6 +270,7 @@ div > article {
   font-weight: 700px;
   line-height: 50px;
   color: #172b4d;
+  align-items: center;
 }
 
 /* my info section */
@@ -312,6 +339,7 @@ div > article {
 .contacts {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-top-left-radius: 80px;
   background-color: #6070ff;
   width: 100%;
@@ -325,6 +353,7 @@ div > article {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .contactme-head {
@@ -402,4 +431,145 @@ textarea::placeholder {
   font-family: "poppins", sans-serif;
   font-size: 15px;
   padding: 10px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-family: "poppins", sans-serif;
+    background: #f7f7f9;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  header {
+    padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .items {
+    display: flex;
+  }
+
+  nav > i {
+    display: none;
+  }
+
+  .main-section {
+    display: block;
+    flex-direction: column;
+    width: inherit;
+  }
+
+  .headline {
+    background-image: url(assets/headerbg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 160px;
+    justify-content: center;
+    padding: 15% 18% 0;
+    width: inherit;
+  }
+
+  .headline-head {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .headline-article {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .work {
+    display: grid;
+    place-items: center;
+  }
+
+  .Project-Title {
+    display: none;
+  }
+
+  .DProject-Title {
+    display: block;
+  }
+
+  .projetc-image {
+    display: none;
+  }
+
+  .Dprojetc-image {
+    display: flex;
+  }
+
+  .project2,
+  .project4 {
+    order: -1;
+  }
+
+  .container {
+    display: flex;
+    width: 80%;
+    border-radius: 24px;
+    gap: 80px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 80px;
+    background-color: #6070ff;
+    width: 100%;
+    margin-top: 113px;
+    height: 846px;
+    background-image: url(assets/contactbg.png);
+    background-size: cover;
+  }
+
+  .project-title {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+  }
+
+  .aboutme {
+    display: flex;
+    flex-direction: row;
+    grid: 60px;
+    padding-left: 10%;
+  }
+
+  #my-info {
+    float: inline-end;
+  }
+
+  .lang-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .forms {
+    display: grid;
+    place-items: center;
+  }
+
+  .lang-container {
+    display: inline-flex;
+  }
+
+  .list-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactme-body {
+    justify-items: center;
+    width: 56%;
+  }
+
+  input,
+  textarea {
+    width: 56%;
+  }
 }
