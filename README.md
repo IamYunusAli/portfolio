@@ -10,11 +10,7 @@
 
 ## Demo
 
-[Demo]
-<video controls width="350">
-<source src="assets/demo.mp4"
-            type="video/mp4">
-</video>
+[Demo](https://github.com/IamYunusAli/portfolio/blob/desktop-version/assets/demo.mp4)
 
 ## Getting Started
 
