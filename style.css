@@ -6,6 +6,19 @@ body {
   margin: 0;
 }
 
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+  padding: 0 10%;
+}
+
+.items {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -403,3 +416,134 @@ textarea::placeholder {
   font-size: 15px;
   padding: 10px;
 }
+
+@media (min-width: 768px) {
+  body {
+    font-family: "poppins", sans-serif;
+    background: #f7f7f9;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  header {
+    padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .items {
+    display: flex;
+  }
+
+  nav > i {
+    display: none;
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+  }
+
+  .headline {
+    height: 100vh;
+    background-image: url(assets/headerbg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 160px ;
+    justify-content: center;
+    padding: 25% 18% 0;
+    width: inherit;
+  }
+
+  .headline-head {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .headline-article {
+    font-size: 20px;
+    line-height:28px;
+  }
+
+  .work {
+    display: grid;
+    place-items: center;
+  }
+
+  .project2,
+  .project4
+  {
+    order: -1;
+  }
+
+  .container {
+    display: flex;
+    width:80%;
+    border-radius: 24px;
+    gap: 80px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 80px;
+    background-color: #6070ff;
+    width: 100%;
+    margin-top: 113px;
+    height: 846px;
+    background-image: url(assets/contactbg.png);
+    background-size: cover;
+  }
+  .project-title {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+  }
+
+  .aboutme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid: 60px ;
+    padding: 0 10%;
+    width:inherit;
+  }
+
+  #my-info {
+    float:inline-end
+  }
+  .lang-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .forms{
+    display: grid;
+    place-items: center;
+  }
+
+  .aboutme-article {
+    width: 447PX;
+  }
+  .lang-container {
+    display: inline-flex;
+  }
+  .list-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactme-body
+  {
+    justify-items: center;
+    width: 56%;
+  }
+
+  input,
+  textarea
+  {
+    width:56%
+  }
+}
+
