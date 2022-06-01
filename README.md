@@ -11,7 +11,10 @@
 ## Demo
 
 [Demo]
-<img src="assets/demoworkabout.png" width="300">
+<video controls width="350">
+<source src="assets/demo.mp4"
+            type="video/mp4">
+</video>
 
 ## Getting Started
 
