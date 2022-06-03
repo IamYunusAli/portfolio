@@ -21,6 +21,27 @@ a {
   text-decoration: none;
 }
 
+.logo:hover {
+  animation-name: animate;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .main-section {
   display: flex;
   flex-wrap: wrap;
