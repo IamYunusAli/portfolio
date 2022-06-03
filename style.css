@@ -21,6 +21,30 @@ a {
   text-decoration: none;
 }
 
+.logo:hover {
+  animation-name: animate;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .main-section {
   display: flex;
   flex-wrap: wrap;
@@ -176,6 +200,10 @@ div > p {
 .project-image {
   height: 50%;
   width: 100%;
+}
+
+.projetc-image:hover {
+  transform: scale(1.1);
 }
 
 div > article {
@@ -433,6 +461,16 @@ textarea::placeholder {
   padding: 10px;
 }
 
+.form-name:hover,
+.form-email:hover,
+.form-message:hover {
+  transform: translate(10px, 0);
+}
+
+.contactme-body:hover {
+  transform: translate(-10px, 0);
+}
+
 @media (min-width: 768px) {
   body {
     font-family: "poppins", sans-serif;
@@ -501,6 +539,10 @@ textarea::placeholder {
 
   .Dprojetc-image {
     display: flex;
+  }
+
+  .Dprojetc-image:hover {
+    transform: scale(1.05);
   }
 
   .project2,
