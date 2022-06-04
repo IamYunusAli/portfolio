@@ -501,7 +501,7 @@ textarea::placeholder {
   }
 
   .headline {
-    background-image: url(assets/headerbg.png);
+    background-image: url(assets/Headerbg.png);
     background-size: contain;
     background-repeat: no-repeat;
     border-bottom-left-radius: 160px;
