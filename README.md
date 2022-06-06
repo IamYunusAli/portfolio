@@ -12,6 +12,8 @@
 
 [Demo](https://github.com/IamYunusAli/portfolio/blob/desktop-version/assets/demo.mp4)
 
+[Online Hosted Link](https://iamyunusali.github.io/portfolio/)
+
 ## Getting Started
 
 **Getting stared with learning full stack web developments.**
