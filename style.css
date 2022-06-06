@@ -92,7 +92,7 @@ span {
   line-height: 20px;
 }
 
-h1 {
+h2 {
   font-size: 50px;
   line-height: 52px;
   color: #172b4d;
@@ -114,12 +114,12 @@ p {
 }
 
 nav > i {
-  color: #6070ff;
+  color: #396df2;
   font-size: 30px;
 }
 
 a > h4 {
-  color: #6070ff;
+  color: #396df2;
   font-size: 20px;
   line-height: 38px;
   margin: 0;
@@ -248,7 +248,7 @@ div > article {
 }
 
 .btn:hover {
-  background-color: #6070ff;
+  background-color: #396df2;
   color: white;
 }
 
