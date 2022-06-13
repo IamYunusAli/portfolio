@@ -684,4 +684,10 @@ textarea::placeholder {
     align-items: center;
     padding-top: 10px;
   }
+
+  .menu-open,
+  .close {
+    display: none;
+  }
+
 }
