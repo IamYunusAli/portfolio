@@ -30,11 +30,17 @@ open it on editor and enjoy
 
 ## Author
 
-👤 **Author**
+👤 **Author 1**
 
 - GitHub: [@IamYunusALi](https://github.com/iamyunusali)
 - Twitter: [@IamYunusAli](https://twitter.com/iamyunusali)
 - LinkedIn: [Yunus ALi](https://linkedin.com/in/iamyunusali)
+
+👤 **Author 2**
+
+- GitHub: [@Tarek102](https://github.com/tarek102)
+- Twitter: [@TarekYosry14](https://twitter.com/TarekYosry14)
+- LinkedIn: [Tarek Yosry](https://www.linkedin.com/in/tarek-yosry-14866321a/)
 
 ## 🤝 Contributing
 
