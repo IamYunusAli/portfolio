@@ -262,9 +262,14 @@ div > article {
 
 }
 
+i:hover {
+  cursor: pointer;
+}
+
 .btn:hover {
   background-color: #396df2;
   color: white;
+  cursor: pointer;
 }
 
 .btn:active {
@@ -600,6 +605,11 @@ textarea::placeholder {
 
 .project-button > a {
   color: #6070ff;
+}
+
+.project-button > a:hover,
+.btnicon:hover {
+  color: #fff;
 }
 
 @media (min-width: 768px) {
