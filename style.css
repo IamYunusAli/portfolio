@@ -120,7 +120,7 @@ p {
 }
 
 nav > i,
-.btnicon > i {
+.btnicon {
   color: #6070ff;
 }
 
@@ -259,7 +259,6 @@ div > article {
   margin: 0 0 10px 0;
   font-size: 17px;
   width: 150px;
-
 }
 
 i:hover {
@@ -603,11 +602,11 @@ textarea::placeholder {
   display: none;
 }
 
-.project-button > a {
+.btn-live {
   color: #6070ff;
 }
 
-.project-button > a:hover,
+.btn-live:hover,
 .btnicon:hover {
   color: #fff;
 }

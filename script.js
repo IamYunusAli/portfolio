@@ -121,13 +121,13 @@ function projectPopup(position) {
               </ul>
               <div class="popup-buttons">
                 <button type="button" class="btn project-button">
-                        <a href="">
+                        <a class="btn-live"href="">
                           See live &nbsp;&nbsp;&nbsp;
                           <i class="btnicon bi bi-box-arrow-up-right"></i>
                         </a>
                 </button>
                 <button type="button" class="btn project-button">
-                        <a href="">
+                        <a class="btn-live"href="">
                           See Source&nbsp;&nbsp;&nbsp;
                           <i class="btnicon bi bi-github"></i>
                         </a>
