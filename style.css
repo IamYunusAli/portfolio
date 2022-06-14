@@ -119,8 +119,12 @@ p {
   margin: 0;
 }
 
-nav > i {
+nav > i,
+.btnicon > i {
   color: #6070ff;
+}
+
+nav > i {
   font-size: 30px;
 }
 
@@ -199,7 +203,7 @@ li:active {
   width: 100%;
 }
 
-div > h1 {
+div > h2 {
   margin: 12px 0 5px 0;
 }
 
@@ -255,6 +259,7 @@ div > article {
   margin: 0 0 10px 0;
   font-size: 17px;
   width: 150px;
+
 }
 
 .btn:hover {
@@ -533,6 +538,70 @@ textarea::placeholder {
   display: none;
 }
 
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  max-height: 100vh;
+  overflow: auto;
+  background: rgba(193, 199, 208, 0.5);
+  backdrop-filter: blur(3px);
+  padding: 50px 16px;
+  box-sizing: border-box;
+}
+
+.popup-content > .info-top {
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+
+.popup-content {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 20px 16px;
+  position: relative;
+  border-radius: 15px;
+}
+
+.close-icon {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 15px;
+  top: 30px;
+}
+
+.project-img {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.popup-buttons {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0fr 1fr;
+  column-gap: 12px;
+  border-top: 1px solid #ebecf0;
+  padding-top: 25px;
+}
+
+.popup-buttons > .project-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.desktop-img {
+  display: none;
+}
+
+.project-button > a {
+  color: #6070ff;
+}
+
 @media (min-width: 768px) {
   body {
     font-family: "poppins", sans-serif;
@@ -580,10 +649,6 @@ textarea::placeholder {
     place-items: center;
   }
 
-  .Project-Title {
-    display: none;
-  }
-
   .DProject-Title {
     display: block;
   }
@@ -594,14 +659,18 @@ textarea::placeholder {
 
   .Dprojetc-image {
     display: flex;
+    max-width: 544px;
+    min-width: 300px;
+    max-height: 448px;
+    min-height: 250px;
   }
 
   .Dprojetc-image:hover {
     transform: scale(1.05);
   }
 
-  .project2,
-  .project4 {
+  .container > .project1,
+  .container > .project3 {
     order: -1;
   }
 
@@ -688,5 +757,50 @@ textarea::placeholder {
   .menu-open,
   .close {
     display: none;
+  }
+
+  .popup {
+    width: 100%;
+    padding: 80px 140px;
+  }
+
+  .popup-content {
+    padding: 24px;
+  }
+
+  .popup-content > .project-text {
+    line-height: 30px;
+  }
+
+  .project-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: initial;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .popup-content > .project-info-top {
+    margin-top: 16px;
+    margin-bottom: 36px;
+  }
+
+  .popup-bottom {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .badges-buttons {
+    margin-left: 30px;
+  }
+
+  .badges-buttons > .project-languages {
+    margin-bottom: 20px;
+  }
+
+  .close-icon {
+    right: 30px;
   }
 }
