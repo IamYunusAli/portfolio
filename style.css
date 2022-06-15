@@ -606,6 +606,10 @@ textarea::placeholder {
   color: #6070ff;
 }
 
+.error {
+  color: #fff;
+}
+
 .btn-live:hover,
 .btnicon:hover {
   color: #fff;
