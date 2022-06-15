@@ -169,3 +169,19 @@ form.addEventListener('submit', (event) => {
     errorMsg.innerText = errorMessage;
   }
 });
+
+// local storage
+const formData = {
+  name: document.querySelector('.form-name').value,
+  email: document.querySelector('.form-email').value,
+  message: document.querySelector('.form-message').value,
+};
+
+Array.from(form).forEach((element) => {
+  element.addEventListener('input', () => {
+    formData.name = document.querySelector('.form-name').value;
+    formData.email = document.querySelector('.form-email').value;
+    formData.message = document.querySelector('.form-message').value;
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+});
