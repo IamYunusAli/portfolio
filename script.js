@@ -142,11 +142,11 @@ function projectPopup(position) {
   portfolios.appendChild(popup);
 }
 
-const projectnBtn = document.querySelectorAll('.see-project');
+const projectnBtn = document.querySelectorAll('see-project');
 projectnBtn.forEach((btn, ind) => {
   btn.addEventListener('click', () => {
     projectPopup(ind);
-    const popup = document.querySelector('.popup');
+    const popup = document.querySelector('popup');
     document.querySelector('.close-icon').addEventListener('click', () => {
       portfolios.removeChild(popup);
     });
