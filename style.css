@@ -7,8 +7,9 @@ body {
 
 header {
   background-color: #fff;
-  position: sticky; top: 0;
-  box-shadow: #d9dde6 0px 0px 10px;
+  position: sticky;
+  top: 0;
+  box-shadow: #d9dde6 0 0 10px;
 }
 
 nav {
@@ -685,6 +686,13 @@ textarea::placeholder {
     min-height: 250px;
   }
 
+  .container {
+    display: flex;
+    width: 80%;
+    border-radius: 24px;
+    gap: 80px;
+  }
+
   .container:hover {
     transform: scale(1.05);
     border: 2px solid rgb(219, 215, 215);
@@ -694,13 +702,6 @@ textarea::placeholder {
   .container > .project1,
   .container > .project3 {
     order: -1;
-  }
-
-  .container {
-    display: flex;
-    width: 80%;
-    border-radius: 24px;
-    gap: 80px;
   }
 
   .contacts {
