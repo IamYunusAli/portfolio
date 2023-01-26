@@ -21,52 +21,60 @@ navItem.forEach((menuItem) => {
 // Project pop up section
 const projects = [
   {
-    mobileImage: 'src="assets/Portfolio1.png" alt="mobile-project1"',
-    desktopImage: 'src="assets/desktop/Portfolio1.png" alt="Desktop-project1"',
-    name: 'Tonic',
+    mobileImage: 'src="assets/portfolio1.png" alt="mobile-project1"',
+    desktopImage: 'src="assets/portfolio1.png" alt="Desktop-project1"',
+    name: 'Eventifiy',
     jobDescription: {
-      company: 'CANOPY',
-      role: 'Back End Dev',
-      year: '2015',
+      company: 'Microverse',
+      role: 'FullStack Dev',
+      year: '2023',
     },
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'javascript'],
+    description: 'Eventify is a Full-stack web application. that makes easier to post, reserve and delete events on a click of button.',
+    languages: ['tailwind', 'ruby', 'rails'],
+    github: 'https://github.com/IamYunusAli/Eventify-backend',
+    livedemo: 'https://eventify-cap.netlify.app/',
   },
   {
     mobileImage: 'src="assets/Portfolio2.png" alt="mobile-project2"',
     desktopImage: 'src="assets/desktop/Portfolio2.png" alt="Desktop-project2"',
-    name: 'Multi-Post Stories',
+    name: 'MovieVerse',
     jobDescription: {
-      company: 'FACEBOOK',
-      role: 'FullStack Dev',
-      year: '2015',
+      company: 'Microverse',
+      role: 'Frontend Dev',
+      year: '2022',
     },
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    description: 'A frontend application that allows users to search for movies , comment and like the listed movies.',
     languages: ['html', 'css', 'javascript'],
+    github: 'https://github.com/IamYunusAli/MovieVerse',
+    livedemo: 'https://iamyunusali.github.io/MovieVerse/',
   },
   {
     mobileImage: 'src="assets/Portfolio3.png" alt="mobile-project3"',
     desktopImage: 'src="assets/desktop/Portfolio3.png" alt="Desktop-project3"',
-    name: 'Facebook 360',
+    name: 'Liket',
     jobDescription: {
-      company: 'FACEBOOK',
-      role: 'FullStack Dev',
-      year: '2015',
+      company: 'Microverse',
+      role: 'FrontEnd Dev',
+      year: '2022',
     },
-    description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    languages: ['html', 'css', 'javascript'],
+    description: 'Liket [ ልኬት ] is a frontend web application built using coingecko public cryptocurrency API.',
+    languages: ['React', 'css', 'javascript'],
+    github: 'https://github.com/IamYunusAli/Liket',
+    livedemo: 'https://liket.netlify.app/',
   },
   {
     mobileImage: 'src="assets/Portfolio4.png" alt="mobile-project4"',
     desktopImage: 'src="assets/desktop/Portfolio4.png" alt="Desktop-project4"',
-    name: 'Multi-Post Stories',
+    name: 'Birre',
     jobDescription: {
-      company: 'Uber',
-      role: 'Lead Developer',
-      year: '2018',
+      company: 'Microverse',
+      role: 'FullStack Dev',
+      year: '2022',
     },
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    languages: ['html', 'css', 'javascript'],
+    description: 'Birre is a full-stack web Application that has the ability to add catagories and transaction of items.',
+    languages: ['tailwind', 'ruby', 'rails'],
+    github: 'https://github.com/IamYunusAli/Birre',
+    livedemo: 'https://birre-app.onrender.com/',
   },
 ];
 const portfolios = document.querySelector('#Portfolio');
@@ -84,7 +92,7 @@ projects.forEach((project, id) => {
       </article>
       <p class="description">${project.description}</p>
       <ul class="stacks">
-        <li class="language">${project.languages[0]}</li>
+      <li class="language">${project.languages[0]}</li>
         <li class="language">${project.languages[1]}</li>
         <li class="language">${project.languages[2]}</li>
       </ul>
@@ -102,7 +110,7 @@ function projectPopup(position) {
              ${projects[position].name}
           </h2>
           <i class="close-icon bi bi-x-lg "></i>
-          <img class="project-img" src="assets/Portfolio${position + 1}.png" alt="">
+          <img class="project-img" src="assets/portfolio${position + 1}.png" alt="">
 
           <ul class="info-top">
             <li class="title">${projects[position].jobDescription.company}&nbsp;&nbsp; &#8226; &nbsp;</li>
@@ -122,13 +130,13 @@ function projectPopup(position) {
               </ul>
               <div class="popup-buttons">
                 <button type="button" class="btn project-button">
-                        <a class="btn-live"href="">
+                        <a class="btn-live"href="${projects[position].livedemo}">
                           See live &nbsp;&nbsp;&nbsp;
                           <i class="btnicon bi bi-box-arrow-up-right"></i>
                         </a>
                 </button>
                 <button type="button" class="btn project-button">
-                        <a class="btn-live"href="">
+                        <a class="btn-live"href="${projects[position].github}">
                           See Source&nbsp;&nbsp;&nbsp;
                           <i class="btnicon bi bi-github"></i>
                         </a>
@@ -142,11 +150,11 @@ function projectPopup(position) {
   portfolios.appendChild(popup);
 }
 
-const projectnBtn = document.querySelectorAll('see-project');
+const projectnBtn = document.querySelectorAll('.see-project');
 projectnBtn.forEach((btn, ind) => {
   btn.addEventListener('click', () => {
     projectPopup(ind);
-    const popup = document.querySelector('popup');
+    const popup = document.querySelector('.popup');
     document.querySelector('.close-icon').addEventListener('click', () => {
       portfolios.removeChild(popup);
     });
