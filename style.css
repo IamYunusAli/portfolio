@@ -7,6 +7,8 @@ body {
 
 header {
   background-color: #fff;
+  position: sticky; top: 0;
+  box-shadow: #d9dde6 0px 0px 10px;
 }
 
 nav {
@@ -16,6 +18,7 @@ nav {
   background: transparent;
   padding: 0 10% 0 10%;
   position: sticky;
+  align-items: center;
 }
 
 a {
@@ -85,6 +88,7 @@ a {
   line-height: 24px;
   color: #7f8cff;
   margin-bottom: 12px;
+  margin-top: 10px;
 }
 
 .connect {
@@ -216,8 +220,10 @@ div > p {
   width: 100%;
 }
 
-.projetc-image:hover {
+.container:hover {
   transform: scale(1.1);
+  border: 2px solid rgb(219, 215, 215);
+  transition: 0.2s;
 }
 
 div > article {
@@ -643,7 +649,7 @@ textarea::placeholder {
     background-repeat: no-repeat;
     border-bottom-left-radius: 160px;
     justify-content: center;
-    padding: 15% 18% 0;
+    padding: 10% 10% 0;
     width: inherit;
   }
 
@@ -655,6 +661,7 @@ textarea::placeholder {
   .headline-article {
     font-size: 20px;
     line-height: 28px;
+    margin-bottom: 12px;
   }
 
   .work {
@@ -678,8 +685,10 @@ textarea::placeholder {
     min-height: 250px;
   }
 
-  .Dprojetc-image:hover {
+  .container:hover {
     transform: scale(1.05);
+    border: 2px solid rgb(219, 215, 215);
+    transition: 0.2s;
   }
 
   .container > .project1,
