@@ -22,7 +22,7 @@ navItem.forEach((menuItem) => {
 const projects = [
   {
     mobileImage: 'src="assets/portfolio1.png" alt="mobile-project1"',
-    desktopImage: 'src="assets/portfolio1.png" alt="Desktop-project1"',
+    desktopImage: 'src="assets/desktop/portfolio1.png" alt="Desktop-project1"',
     name: 'Eventifiy',
     jobDescription: {
       company: 'Microverse',
