@@ -21,8 +21,8 @@ navItem.forEach((menuItem) => {
 // Project pop up section
 const projects = [
   {
-    mobileImage: 'src="assets/portfolio1.png" alt="mobile-project1"',
-    desktopImage: 'src="assets/desktop/portfolio1.png" alt="Desktop-project1"',
+    mobileImage: 'src="assets/Portfolio1.png" alt="mobile-project1"',
+    desktopImage: 'src="assets/desktop/Portfolio1.png" alt="Desktop-project1"',
     name: 'Eventifiy',
     jobDescription: {
       company: 'Microverse',
