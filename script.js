@@ -110,7 +110,7 @@ function projectPopup(position) {
              ${projects[position].name}
           </h2>
           <i class="close-icon bi bi-x-lg "></i>
-          <img class="project-img" src="assets/portfolio${position + 1}.png" alt="">
+          <img class="project-img" src="assets/Portfolio${position + 1}.png" alt="">
 
           <ul class="info-top">
             <li class="title">${projects[position].jobDescription.company}&nbsp;&nbsp; &#8226; &nbsp;</li>
