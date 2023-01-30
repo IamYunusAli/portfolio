@@ -343,12 +343,16 @@ i:hover {
 
 .lang-container,
 .list-item {
+  width: 100%;
   display: flex;
   align-items: center;
+  border: 1px solid #ebebff;
+  padding: 7px;
+  justify-content: space-between;
 }
 
 .lang-list {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
